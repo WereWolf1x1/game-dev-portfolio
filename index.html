@@ -1,220 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BitBrawlers - Game Dev Team</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-  <!-- <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitBrawlers Studios - Game Development</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+    <div class="cursor"></div>
+
+    <div class="transition-overlay"></div>
+
+    <div class="preloader">
+        <div class="loader">
+            <img src="alt logo.png" alt="Loading Logo" class="loader-logo" />
+        </div>
+    </div>
+
     <header class="header">
-        <a href="#home" class="logo">Bit<span>Brawlers</span></a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>  
-
-
+        <a href="#home" class="logo">
+            <img src="alt logo.png" alt="BitBrawlers Logo">
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-            
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#team" class="nav-link">Team</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
-    
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hello! We are <span>BitBrawlers</span></h1>
-            <h3 class="text-animation"> We are <span></span></h3>
-            <p></p>
-            <div class="btn-grp">
-                <a href="#" class="btn">Hire </a>
-                <a href="#contact" class="btn"> Contact</a>
-            </div>
 
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Unity Development</h4>
-                    <p></p>
+    <div id="main-content">
+        <section class="home" id="home">
+            <div class="home-content animate-on-scroll">
+                <h1>Creative Minds. <span>Compelling Games.</span></h1>
+                <h3 class="text-animation">We Are <span></span></h3>
+                <p>A collective of passionate developers and artists transforming visionary ideas into immersive,
+                    interactive game experiences. We are BitBrawlers.</p>
+                <div class="btn-grp">
+                    <a href="#projects" class="btn">Our Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                 </div>
             </div>
+        </section>
 
-            
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Online/Offline Games</h4>
-                    <p></p>
+        <section class="services" id="services">
+            <h2 class="heading animate-on-scroll">Our <span>Capabilities</span></h2>
+            <div class="services-container">
+                <div class="service-box animate-on-scroll">
+                    <i class='bx bxl-unity'></i>
+                    <h3>Unity Development</h3>
+                    <p>From 2D platformers to complex 3D worlds, we leverage the full power of Unity to build
+                        high-performance, cross-platform games.</p>
+                </div>
+                <div class="service-box animate-on-scroll" style="animation-delay: 0.2s;">
+                    <i class='bx bx-game'></i>
+                    <h3>Gameplay & Mechanics</h3>
+                    <p>We design and implement compelling core loops and innovative mechanics that keep players engaged
+                        and entertained for hours.</p>
+                </div>
+                <div class="service-box animate-on-scroll" style="animation-delay: 0.4s;">
+                    <i class='bx bx-pen'></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Crafting intuitive, visually stunning interfaces that enhance gameplay and provide a seamless
+                        user experience.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Game UI/UX</h4>
-                    <p></p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
-        <div class="project-box">
-            <div class="project-card">
-                <img src="project-1.png" alt="">
-                <h3>Grass Grind</h3>
-                <p>Grass Grind is a 2D pixel-art puzzle game where players guide a lawnmower through custom-designed levels by drawing solid lines on the screen. Using a unique touch-based mechanic, players create paths that 
-                    the lawnmower follows to clear grass and reach the goal. The game combines strategic planning with interactive control, 
-                    offering increasingly complex terrain and obstacles. Built with Unity and C#, Grass Grind features mobile-optimized touch input and a nostalgic pixel aesthetic.</p>
-                <!-- <div class="btn">View</div> -->
-            </div>
-
-             <div class="project-card">
-                <img src="project-2.png" alt="">
-                <h3>Hurf Abad</h3>
-                <p>Hurf Abad is an educational game designed for children aged 5–9, aimed at teaching the Urdu language through three engaging mini-games. With simple controls like arrow keys and colorful, 
-                    child-friendly visuals, the game creates a fun and accessible learning environment. Built in collaboration with a 2D artist, the project involved integrating custom visual assets to enhance 
-                    gameplay. Each mini-game focuses on different aspects of Urdu letters and pronunciation, making language learning interactive and enjoyable.</p>
-                <!-- <div class="btn">View</div> -->
-            </div>
-
-             <div class="project-card">
-                <img src="project-3.png" alt="">
-                <h3>Pharma Game</h3>
-                <p>Pharma Game is a simple 2D click-based game where players repeatedly click on grid boxes in search of a hidden win or lose box. 
-                    The game features clean visuals and straightforward mechanics, offering quick and casual gameplay. Designed for 
-                    both PC and Android platforms, it uses a grid system and 2D assets to deliver a smooth and intuitive experience with minimal controls.</p>
-                <!-- <div class="btn">View</div> -->
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="team" id="team">
-        <div class="team-box">
-            <h2 class="heading">Our Team</h2>
-
-            <div class="wrapper">
-                
-                <div class="member">
-                    <img src="profile.png">
-                    <h2>Muhammad Faheem Haider</h2>
-                    
-                    
-                    <p>I'm a Computer Science student who enjoys exploring different areas of technology to discover what truly sparks my interest. Whether it’s backend development, AI concepts, or creative tools, I’m always experimenting and learning. I love diving into new challenges and bringing a fresh perspective to every project.</p>
-                    <div class="social">
-                        <a href="#"><i class='bxl  bx-github'  ></i> </a>
-                        <a href="#"><i class='bxl  bx-linkedin'  ></i> </a>
+        <section class="projects" id="projects">
+            <h2 class="heading animate-on-scroll">Our <span>Projects</span></h2>
+            <div class="project-box">
+                <div class="project-card animate-on-scroll" data-title="Grass Grind" data-youtube-id="dQw4w9WgXcQ"
+                    data-description="Grass Grind is a 2D pixel-art puzzle game where players guide a lawnmower through custom-designed levels by drawing solid lines on the screen. Using a unique touch-based mechanic, players create paths that the lawnmower follows to clear grass and reach the goal. The game combines strategic planning with interactive control, offering increasingly complex terrain and obstacles. Built with Unity and C#, Grass Grind features mobile-optimized touch input and a nostalgic pixel aesthetic."
+                    data-images="https://placehold.co/600x400/1e1c32/8c78f7?text=Gameplay+1,https://placehold.co/600x400/1e1c32/ffffff?text=Gameplay+2,https://placehold.co/600x400/1e1c32/8c78f7?text=Level+Select">
+                    <img src="https://placehold.co/400x300/151325/5945B9?text=Grass+Grind" alt="Grass Grind Game">
+                    <div class="project-card-content">
+                        <h3>Grass Grind</h3>
+                        <p>A 2D pixel-art puzzle game of strategic lawn-mowing.</p>
+                        <span class="btn-view">View Project</span>
                     </div>
                 </div>
-
-                <div class="member">
-                    <img src="profile.png">
-                    <h2>Zarrar Ul Arfeen</h2>
-                    
-                    
-                    <p>I’m a CS undergraduate with a strong passion for digital art and visual design. I love combining creativity with technical skills to build user-friendly and visually appealing experiences. Whether I’m designing interfaces or crafting assets, I always aim to make things both functional and beautiful.</p>
-                    <div class="social">
-                        <a href="#"><i class='bxl  bx-github'  ></i> </a>
-                        <a href="#"><i class='bxl  bx-linkedin'  ></i> </a>
+                <div class="project-card animate-on-scroll" style="animation-delay: 0.2s;" data-title="Hurf Abad"
+                    data-youtube-id="dQw4w9WgXcQ"
+                    data-description="Hurf Abad is an educational game designed for children aged 5–9, aimed at teaching the Urdu language through three engaging mini-games. With simple controls like arrow keys and colorful, child-friendly visuals, the game creates a fun and accessible learning environment. Built in collaboration with a 2D artist, the project involved integrating custom visual assets to enhance gameplay. Each mini-game focuses on different aspects of Urdu letters and pronunciation, making language learning interactive and enjoyable."
+                    data-images="https://placehold.co/600x400/1e1c32/8c78f7?text=Mini-Game+1,https://placehold.co/600x400/1e1c32/ffffff?text=Mini-Game+2,https://placehold.co/600x400/1e1c32/8c78f7?text=Mini-Game+3">
+                    <img src="https://placehold.co/400x300/151325/5945B9?text=Hurf+Abad" alt="Hurf Abad Game">
+                    <div class="project-card-content">
+                        <h3>Hurf Abad</h3>
+                        <p>An educational game for learning the Urdu language.</p>
+                        <span class="btn-view">View Project</span>
                     </div>
                 </div>
-
-                <div class="member">
-                    <img src="profile.png">
-                    <h2>Minhaj Ul Hassan</h2>
-                    
-                    
-                    <p>I’m a Computer Science student fascinated by artificial intelligence and machine learning. I enjoy working with algorithms, learning models, and finding real-world applications for AI. I'm always curious to explore how smart systems can solve complex problems and improve the way we interact with technology.</p>
-                    <div class="social">
-                        <a href="#"><i class='bxl  bx-github'  ></i> </a>
-                        <a href="#"><i class='bxl  bx-linkedin'  ></i> </a>
-                    </div>
-                </div>
-
-                <div class="member">
-                    <img src="profile.png">
-                    <h2>Salman Kamal</h2>
-                    
-                    
-                    <p>I’m an all-rounder in Computer Science, always ready to jump into different roles depending on what the team needs. From debugging code to collaborating on design ideas, I like being involved in every part of the process. I enjoy learning new things and taking on challenges that help me grow as a developer.</p>
-                    <div class="social">
-                        <a href="#"><i class='bxl  bx-github'  ></i> </a>
-                        <a href="#"><i class='bxl  bx-linkedin'  ></i> </a>
-                    </div>
-                </div>
-            
-            
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="contact-box">
-            <h2 class="heading">Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>Ready to bring your game ideas to life? Let's collaborate and create something amazing together!</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                           
-                             
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="mailto:bitbrawlers.dev@gmail.com">bitbrawlers.dev@gmail.com</a>
-                            </div>
-                        </div>
-                        
-                        
+                <div class="project-card animate-on-scroll" style="animation-delay: 0.4s;" data-title="Pharma Game"
+                    data-youtube-id="dQw4w9WgXcQ"
+                    data-description="Pharma Game is a simple 2D click-based game where players repeatedly click on grid boxes in search of a hidden win or lose box. The game features clean visuals and straightforward mechanics, offering quick and casual gameplay. Designed for both PC and Android platforms, it uses a grid system and 2D assets to deliver a smooth and intuitive experience with minimal controls."
+                    data-images="https://placehold.co/600x400/1e1c32/8c78f7?text=Grid+Gameplay,https://placehold.co/600x400/1e1c32/ffffff?text=Win+Screen,https://placehold.co/600x400/1e1c32/8c78f7?text=Lose+Screen">
+                    <img src="https://placehold.co/400x300/151325/5945B9?text=Pharma+Game" alt="Pharma Game">
+                    <div class="project-card-content">
+                        <h3>Pharma Game</h3>
+                        <p>A simple and clean 2D click-based game of chance.</p>
+                        <span class="btn-view">View Project</span>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="team" id="team">
+            <h2 class="heading animate-on-scroll">Meet The <span>Team</span></h2>
+            <div class="team-container">
+                <div class="member-card animate-on-scroll">
+                    <img src="https://placehold.co/150x150/1e1c32/8c78f7?text=MFH" alt="Team Member">
+                    <h3>M. Faheem Haider</h3>
+                    <h4>Tech Explorer</h4>
+                    <p>A CS student diving deep into new technologies, bringing fresh perspectives and a hunger for
+                        innovation to every project.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="#" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+                <div class="member-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <img src="https://placehold.co/150x150/1e1c32/8c78f7?text=ZUA" alt="Team Member">
+                    <h3>Zarrar Ul Arfeen</h3>
+                    <h4>Visual Architect</h4>
+                    <p>Passionate about digital art and design, I merge creativity with technical skill to build
+                        beautiful and intuitive user experiences.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="#" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+                <div class="member-card animate-on-scroll" style="animation-delay: 0.4s;">
+                    <img src="https://placehold.co/150x150/1e1c32/8c78f7?text=MUH" alt="Team Member">
+                    <h3>Minhaj Ul Hassan</h3>
+                    <h4>AI Specialist</h4>
+                    <p>Fascinated by AI and machine learning, I enjoy applying intelligent algorithms to solve complex
+                        problems in gaming.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="#" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+                <div class="member-card animate-on-scroll" style="animation-delay: 0.6s;">
+                    <img src="https://placehold.co/150x150/1e1c32/8c78f7?text=SK" alt="Team Member">
+                    <h3>Salman Kamal</h3>
+                    <h4>Creative All-Rounder</h4>
+                    <p>An adaptable CS student ready to tackle any challenge, from debugging code to contributing to the
+                        core design process.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="#" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading animate-on-scroll">Let's <span>Collaborate</span></h2>
+            <div class="contact-container animate-on-scroll">
+                <p>Have an idea for a game? Need a dedicated team to bring your vision to life? Let's connect and create
+                    something extraordinary together.</p>
+                <a href="mailto:bitbrawlers.dev@gmail.com" class="btn">bitbrawlers.dev@gmail.com</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="project-detail" id="project-detail">
+        <div class="project-detail-content">
+            <button class="btn" id="back-to-projects-btn"><i class='bx bx-arrow-back'></i> Back to Projects</button>
+            <h2 id="project-detail-title"></h2>
+            <div class="video-container" id="project-detail-video">
+            </div>
+            <h3><i class='bx bx-info-circle'></i> About the Game</h3>
+            <p id="project-detail-description"></p>
+            <h3><i class='bx bx-images'></i> Gallery</h3>
+            <div class="gallery-scroll" id="project-detail-gallery">
+            </div>
         </div>
     </section>
-
 
     <footer class="footer">
-        
-        <div class="social-icons">
-            <!-- <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a> -->
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="alt logo.png" alt="BitBrawlers Footer Logo">
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="mailto:bitbrawlers.dev@gmail.com"><i class='bx bxs-envelope'></i></a>
+            </div>
+            <p class="copyright">© 2024 BitBrawlers Studios. All Rights Reserved.</p>
         </div>
-
-        <ul class="links">
-            
-            <li>
-                <a href="#services">Services</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#team">Team</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-
-        <p class="copyright">&copy; BitBrawlers. All rights reserved.</p>
     </footer>
-    
+
     <script src="script.js"></script>
-</body>   
+</body>
+
 </html>
