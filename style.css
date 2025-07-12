@@ -1,5 +1,5 @@
 /* --- FONT IMPORTS AND ROOT VARIABLES --- */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 
 :root {
   --bg-color: #151325;
@@ -7,7 +7,7 @@
   --text-color: #e0e0e0;
   --primary-accent: #5945B9;
   --secondary-accent: #8c78f7;
-  --font-main: 'Nunito', sans-serif;
+  --font-main: 'Poppins', sans-serif;
 }
 
 /* --- GENERAL STYLING & RESETS --- */
@@ -175,7 +175,7 @@ span {
 }
 
 .logo img {
-  height: 4rem;
+  height: 7.5rem;
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -564,7 +564,7 @@ span {
 }
 
 .footer-logo img {
-  height: 5rem;
+  height: 7rem;
   width: auto;
   margin-bottom: 2rem;
   opacity: 0.8;
@@ -772,6 +772,6 @@ span {
   }
 
   .header .logo img {
-    height: 3.5rem;
+    height: 6.5rem;
   }
 }
