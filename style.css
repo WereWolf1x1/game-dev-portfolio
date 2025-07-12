@@ -243,6 +243,17 @@ span {
   font-size: 2.8rem;
   font-weight: 700;
   margin: 2rem 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-animation span {
+  position: relative;
+  display: inline-block;
+  min-width: 20rem;
+  text-align: left;
 }
 
 .text-animation span::before {
@@ -259,6 +270,7 @@ span {
   height: 100%;
   border-left: 3px solid var(--primary-accent);
   right: -8px;
+  top: 0;
   animation: cursor-blink 0.8s infinite, typing 20s steps(14) infinite;
 }
 
